@@ -1,0 +1,16 @@
+- name: Install virtualenv
+  apt:
+    pkg:
+      - pip
+      - virtualenv
+    state: present
+- name: Install Magic Wormhole transit relay
+  command:
+    chdir: /opt
+    cmd: virtualenv tr-venv && pip install twisted && pip install magic-wormhole-transit-relay
+- name: Install systemd unit 
+  copy:
+    src: wormhole-tr.service
+    dest: /etc/systemd/system/wormhole-re.service
+  notify:
+    - Enable systemd unit

@@ -1,0 +1,10 @@
+[Unit]
+Description=Wormhole Transit Relay
+
+[Service]
+Type=forked
+ExecStart=/opt/tr-venv/bin/twistd transitrelay
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

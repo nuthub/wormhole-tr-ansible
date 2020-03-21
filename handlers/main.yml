@@ -1,0 +1,6 @@
+- name: Enable systemd unit
+  systemd:
+    name: wormhole-tr
+    enabled: yes
+    daemon_reload: yes
+    started: true
