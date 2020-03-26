@@ -13,6 +13,6 @@
 - name: Install systemd unit
   copy:
     src: wormhole-tr.service
-    dest: /etc/systemd/system/wormhole-re.service
+    dest: /etc/systemd/system/wormhole-tr.service
   notify:
     - Enable systemd unit
