@@ -3,4 +3,4 @@
     name: wormhole-tr
     enabled: yes
     daemon_reload: yes
-    started: true
+    state: started
