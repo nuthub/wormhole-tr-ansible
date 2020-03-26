@@ -1,7 +1,7 @@
 - name: Install debian packages
   apt:
     pkg:
-      - pip
+      - python-pip
       - virtualenv
     state: present
 - name: Install Magic Wormhole transit relay
