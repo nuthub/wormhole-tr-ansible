@@ -3,7 +3,7 @@ Description=Wormhole Transit Relay
 
 [Service]
 Type=forked
-ExecStart=/opt/tr-venv/bin/twistd transitrelay
+ExecStart=/opt/magic-wormhole-tr-venv/bin/twistd transitrelay
 Restart=on-failure
 
 [Install]

@@ -9,7 +9,7 @@
     name:
       - twisted
       - magic-wormhole-transit-relay
-    virtualenv: /magic-wormhole-venv
+    virtualenv: /opt/magic-wormhole-tr-venv
 - name: Install systemd unit
   copy:
     src: wormhole-tr.service
