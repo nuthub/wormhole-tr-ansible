@@ -2,9 +2,9 @@
 Description=Wormhole Transit Relay
 
 [Service]
-Type=forked
-ExecStart=/opt/magic-wormhole-tr-venv/bin/twistd transitrelay
-Restart=on-failure
+Type=simple
+ExecStart=/opt/magic-wormhole-tr-venv/bin/python2 /opt/magic-wormhole-tr-venv/bin/twistd --nodaemon --pidfile=wormhole-tr transitrelay
+Restart=no
 
 [Install]
 WantedBy=default.target
